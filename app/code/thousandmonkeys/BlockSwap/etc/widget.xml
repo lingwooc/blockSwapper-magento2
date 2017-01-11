@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * Copyright © 2013-2017 Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+    <widget id="block_swap" class="thousandmonkeys\BlockSwap\Block\Widget\Swapper" is_email_compatible="true">
+        <label translate="true">Block Swap</label>
+        <description translate="true">Button to swap two blocks</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="false" visible="true">
+                <label translate="true">Title</label>
+            </parameter>
+            <parameter name="visible" xsi:type="text" required="false" visible="true">
+                <label translate="true">Initially Visible</label>
+            </parameter>
+            <parameter name="hidden" xsi:type="text" required="false" visible="true">
+                <label translate="true">Initially Hidden</label>
+            </parameter>
+            <parameter name="reversable" xsi:type="select" visible="true"
+                       source_model="Magento\Config\Model\Config\Source\Yesno">
+                <label translate="true">Reversable</label>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

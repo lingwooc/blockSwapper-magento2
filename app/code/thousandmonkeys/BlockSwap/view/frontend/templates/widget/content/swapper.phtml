@@ -1,0 +1,11 @@
+<script type="text/javascript">
+	require.config({
+	deps: [
+	 'swapper/swapper'
+	],
+	callback: function (swapper) {
+		swapper('<?php echo $block->escapeHtml($this->getVisible()); ?>', '<?php echo $block->escapeHtml($this->getHidden()); ?>');
+	}
+});
+</script>
+<a id="swapper_action">Show all</a>
